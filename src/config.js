@@ -11,3 +11,11 @@ exports.single = {
   exts: ['.jpg', '.jpeg', '.bmp', '.webp', '.gif', '.png'],
   fieldName: 'avatar',
 };
+exports.base64 = {
+  sizeLimit: 1 * 1024 * 1024,
+  exts: ['.jpg', '.jpeg', '.bmp', '.webp', '.gif', '.png'],
+};
+exports.binary = {
+  sizeLimit: 1 * 1024 * 1024,
+  exts: ['.jpg', '.jpeg', '.bmp', '.webp', '.gif', '.png'],
+};
