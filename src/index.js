@@ -10,6 +10,7 @@ app.use(express.static(config.global.publicPath));
 app.use('/upload/single', require('./upload/single'));
 app.use('/upload/base64', require('./upload/base64'));
 app.use('/upload/binary', require('./upload/binary'));
+app.use('/upload/multi', require('./upload/multi'));
 
 app.use((err, req, res, next) => {
   const { UploadError } = require('./upload/errorTypes');

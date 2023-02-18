@@ -17,6 +17,12 @@ class SizeLimitError extends UploadError {
   }
 }
 
+class CountLimitError extends UploadError {
+  constructor() {
+    super(3, '文件数量超过要求');
+  }
+}
+
 class UnexpectedRequest extends UploadError {
   constructor() {
     super(400, '无法理解的请求');
@@ -27,3 +33,4 @@ exports.UploadError = UploadError;
 exports.ExtError = ExtError;
 exports.SizeLimitError = SizeLimitError;
 exports.UnexpectedRequest = UnexpectedRequest;
+exports.CountLimitError = CountLimitError;

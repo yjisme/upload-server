@@ -19,3 +19,9 @@ exports.binary = {
   sizeLimit: 1 * 1024 * 1024,
   exts: ['.jpg', '.jpeg', '.bmp', '.webp', '.gif', '.png'],
 };
+exports.multi = {
+  fieldName: 'photos',
+  sizeLimit: 1 * 1024 * 1024,
+  countLimit: 10,
+  exts: ['.jpg', '.jpeg', '.bmp', '.webp', '.gif', '.png'],
+};
